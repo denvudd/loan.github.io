@@ -6,7 +6,7 @@ const browsersync = require("browser-sync");
 var deploy = require('gulp-gh-pages');
 
 const dist = "./dist/";
-// const dist = "/Applications/MAMP/htdocs/test"; 
+// const dist = "C:/openserver/domains/loan-test"; 
 
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")

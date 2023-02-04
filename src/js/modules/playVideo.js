@@ -29,6 +29,14 @@ export default class VideoPlayer {
       this.player.stopVideo();
       this.player.clearVideo();
     });
+
+    this.popup.addEventListener('click', () => {
+      this.popup.style.display = 'none';
+      this.popup.classList.remove('fadeInDown');
+
+      this.player.stopVideo();
+      this.player.clearVideo();
+    });
   }
 
   createPlayer(url) {
